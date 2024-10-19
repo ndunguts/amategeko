@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(142, 23, 23, 0.508);
+    
+}
+.quetion{
+    margin-left: 400px;
+    margin-top: 90px;
+    width: 350px;
+    height:fit-content;
+    background-color: rgba(238, 213, 238, 0.745);
+    border-radius:30px ;
+}
+.sub{
+    margin-left: 70px;
+}

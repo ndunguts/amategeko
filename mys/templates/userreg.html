@@ -1,0 +1,18 @@
+<html>
+    <head>
+        
+    </head>
+
+<body>
+    <form action="/insert/" method="post">
+           {% csrf_token %}
+        <pre>
+            question  : <input type="text" name="quest" >
+            A : <input type="text" name="A" >
+
+
+            <input type="submit" name="reg" value="submit" >
+        </pre>
+    </form>
+</body>    
+</html>

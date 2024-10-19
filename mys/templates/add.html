@@ -1,0 +1,16 @@
+<html>
+    <head>
+        
+    </head>
+
+<body>
+    <ul>
+        {% for quest in question %}
+        <li>
+            <td>{{quest.question}}</td>
+            <td><button><a href="{% url 'add1' quest.id %} ">+add</a></button></td>   
+        </li>
+        {% endfor %}
+    </ul>
+</body>    
+</html>
