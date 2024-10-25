@@ -29,6 +29,10 @@ ALLOWED_HOSTS = ['*']
 
 
 # Application definition
+CSRF_TRUSTED_ORIGINS = [
+    'https://a548-2a02-4780-28-fcc9-00-1.ngrok-free.app',
+]
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
