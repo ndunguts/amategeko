@@ -57,7 +57,7 @@ def add_answer(request):
 
     
 def user_detail(request):
-    random_number = random.randint(1, 3)
+    random_number = random.randint(1, 2)
     
     user = get_object_or_404(User, id=random_number)  # Fetch the user by ID
 
