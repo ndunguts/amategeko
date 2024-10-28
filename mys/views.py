@@ -3,8 +3,11 @@ from .models import User,answer
 import random
 
 # Create your views here.
-def userreg(request):
-    return render(request, "userreg.html")
+def start_q(request):
+    return render(request, "start_q.html")
+def end_exa(request):
+    return render(request, "end.html")  
+
 def insert(request):
     quest=request.POST['quest']
     A=request.POST['A']  
@@ -69,7 +72,7 @@ def user_detail(request):
 
     return render(request, 'test.html', {'user': user, 'non_empty_fields': non_empty_fields,'random':user})
 def save_answer(request):
-    if answer.objects.count() <=5:
+    if answer.objects.count() <=20:
         
        question=request.POST['question']
        idq=request.POST['idq']
@@ -78,5 +81,17 @@ def save_answer(request):
        SaVe=answer(question=question,i=idq,true_A=answe)
        SaVe.save()
        return redirect('list')
+       
     else:
         return redirect('add')
+def end_delete(request):  # Accept the request parameter
+    try:
+        # Delete all entries in the Answer model
+        answer.objects.all().delete()
+        # Redirect to the start_q view after deletion
+        return redirect('start_q')
+    except Exception as e:
+       pass
+    
+  
+    

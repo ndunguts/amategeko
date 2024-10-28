@@ -1,0 +1,28 @@
+
+{% load static  %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style1.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="start-screen">
+            <h1 class="heading">PROVISIONAL</h1>
+            <div class="setting">
+                <label for="num-questions">Exercises of Driving Test-Provisional</label>
+                <div class="number">
+                    resuilt <span  class="current">1</span><span class="total">/20</span>
+                </div>
+                <button class="btn show">Show correction</button>
+                <a href="{% url 'end_delete' %}" ><button class="btn start_q">Start again</button></a>
+            </div>
+           
+        </div>
+    </div>
+    <script src="scr.js"></script>
+</body>
+</html>

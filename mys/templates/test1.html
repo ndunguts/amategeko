@@ -1,0 +1,48 @@
+{% load   static  %}
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+    </head>
+
+<body>
+    <div class="quetion">
+    <form action="/test/" method="post">
+       {% csrf_token %}
+   
+
+
+
+<ul>
+    {% for field_name, value in non_empty_fields.items %}
+        {% if field_name != "ID" and field_name != "id" %}
+        <div class="list">
+            <li>
+               
+
+                {% if forloop.counter == 2 %}
+                    <!-- Do not show radio button for the second field -->
+                    <input type="hidden" name="question" value="{{ value }}">
+                    {{ field_name }} {{ random }}: {{ value }}
+                    <input type="hidden" name="idq" value="{{random}}">
+                {% else %}
+                    <!-- Show radio button for other fields -->
+                    <input type="radio" name="answer" value="{{ value }}"> {{ field_name }}: {{ value }}
+                    
+                {% endif %}
+               
+            </li>
+        </div>
+        {% endif %}
+        
+    {% endfor %}
+    
+     </ul>
+     
+
+
+<input type="submit" name="reg" class="sub" value="submit" >
+
+</form>
+    </div>
+</body>    
+</html>

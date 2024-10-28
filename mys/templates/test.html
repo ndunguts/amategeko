@@ -1,61 +1,81 @@
-{% load   static  %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quiz</title>
     <link rel="stylesheet" href="{% static 'style1.css' %}">
+    <script>
+        // Prevent back navigation after page load
+        function preventBack() {
+            window.history.forward();
+        }
+
+        // Call preventBack immediately and set it on unload
+        window.onload = preventBack;
+        window.onpageshow = function (event) {
+            if (event.persisted) {
+                preventBack();
+            }
+        };
+        window.onunload = function () { null }; // Prevents back action
+    </script>
 </head>
 <body>
     <div class="container">
         <div class="start-screen hide">
-           
+            <!-- Start screen content can go here -->
         </div>
         <div class="quiz">
+            
             <div class="timer">
-              <div class="progress">
-                <div class="progress-bar"></div>
-                <span class="progress-text">50</span>
-              </div>    
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                    <span class="progress-text">50</span>
+                </div> 
+                <a href="{% url 'end_delete' %}"><button class="start">Rest</button></a>
+
             </div>
             <div class="question-wrapper">
                 <form action="/test/" method="post">
                     {% csrf_token %}
-                <div class="number">
-                    Question <span  class="current">1</span><span class="total">/10</span>
-                </div>
-                <ul>
-                    {% for field_name, value in non_empty_fields.items %}
-                        {% if field_name != "ID" and field_name != "id" %}
-                        <div class="list">
-                            <li>
-                                {% if forloop.counter == 2 %}
-                                <!-- Do not show radio button for the second field -->
-                                <input type="hidden" name="question" value="{{ value }}">
-                <div class="question">{{ value }}</div>
-                                {% else %}
-                <div class="answer-wrapper">
-                    <div class="answer">
-                        <span class="text"><input type="radio" name="answer" value="{{ value }}"> {{ field_name }}: {{ value }}
-                        </span>
-                        <span class="checkbox">v</span>
+                    <div class="number">
+                        Question <span class="current">1</span><span class="total">/10</span>
                     </div>
-                </div>
-                {% endif %}
-            </li>
+                    <ul>
+                        {% for field_name, value in non_empty_fields.items %}
+                            {% if field_name != "ID" and field_name != "id" %}
+                                <div class="list">
+                                    <li>
+                                        {% if forloop.counter == 2 %}
+                                            <!-- Do not show radio button for the second field -->
+                                            <input type="hidden" name="question" value="{{ value }}">
+                                            <input type="hidden" name="idq" value="{{ random }}">
+                                            <div class="question">{{ value }}</div>
+                                        {% else %}
+                                            <div class="answer-wrapper">
+                                                <div class="answer">
+                                                    <span class="text">
+                                                        <input type="radio" name="answer" value="{{ value }}" required> {{ field_name }}: {{ value }}
+                                                    </span>
+                                                    <span class="checkbox">v</span>
+                                                </div>
+                                            </div>
+                                        {% endif %}
+                                    </li>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                    <input type="submit" name="reg" class="btn start" value="Next">
+                </form>
             </div>
-            {% endif %}
-        
-            {% endfor %}
-            
-             </ul>
-             <input type="submit" name="reg" class="btn" value="Next" >
-            </form>
-
         </div>
-       
     </div>
-    <script src="scr.js"></script>
+    
+
+    <script src="{% static 'js/scr.js' %}"></script>
+    
 </body>
 </html>
