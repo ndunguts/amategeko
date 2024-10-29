@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Login & Signup Form {% endblock%}</title>
+    <link rel="stylesheet" href="{% static 'styles2.css' %}">
+</head>
+<body>
+    {% block content %}
+    <div class="container">
+        <div class="form-container">
+            <div class="form-box">
+                <div class="form-box-inner">
+                    <!-- Login Form -->
+                    <div class="form form-login">
+                        <h2>Login</h2>
+                        <form action="{% url 'checklogin' %}" method="post" >
+                            {% csrf_token %}
+                            <div class="input-box">
+                                <input type="text" id="login-username" name="login-username" required>
+                                <label for="login-username">Username</label>
+                            </div>
+                            <div class="input-box">
+                                <input type="password" id="login-password" name="login-password" required>
+                                <label for="login-password">Password</label>
+                            </div>
+                            <div class="submit-box">
+                                <input type="submit" value="Login">
+                            </div>
+                            <p class="switch-form">Don't have an account? <a href="#" id="to-signup">Signup</a></p>
+                        </form>
+                    </div>
+                    <!-- Signup Form -->
+                    <div class="form form-signup">
+                        <h2>Signup</h2>
+                        <form action="{% url 'sinup' %}" method="post">
+                             {% csrf_token %} 
+                            <div class="input-box">
+                                <input type="text" id="signup-username" name="signup-username" required>
+                                <label for="signup-username">Username</label>
+                            </div>
+                            <div class="input-box">
+                                <input type="email" id="signup-email" name="signup-email" required>
+                                <label for="signup-email">Email</label>
+                            </div>
+                            <div class="input-box">
+                                <input type="password" id="signup-password" name="signup-password" required>
+                                <label for="signup-password">Password</label>
+                            </div>
+                            <div class="submit-box">
+                                <input type="submit" value="Signup">
+                            </div>
+                            <p class="switch-form">Already have an account? <a href="#" id="to-login">Login</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

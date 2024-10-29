@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect,get_object_or_404
-from .models import User,answer
+from .models import User,answer,useraccount
 import random
 
 # Create your views here.
@@ -72,26 +72,80 @@ def user_detail(request):
 
     return render(request, 'test.html', {'user': user, 'non_empty_fields': non_empty_fields,'random':user})
 def save_answer(request):
-    if answer.objects.count() <=20:
-        
+    user_id = request.session.get('userid', None)
+    if answer.objects.filter(iduser=user_id).count() <= 18:
        question=request.POST['question']
        idq=request.POST['idq']
     
        answe=request.POST['answer']
-       SaVe=answer(question=question,i=idq,true_A=answe)
+       SaVe=answer(question=question,idq=idq,iduser=user_id, true_A=answe)
        SaVe.save()
        return redirect('list')
        
     else:
-        return redirect('add')
-def end_delete(request):  # Accept the request parameter
+        return redirect('end')
+def end_delete(request):  
     try:
-        # Delete all entries in the Answer model
-        answer.objects.all().delete()
+        # Get user_id from session
+        user_id = request.session.get('userid', None)
+        
+        # Delete entries in the Answer model where iduser matches user_id
+        answer.objects.filter(iduser=user_id).delete()
+        
         # Redirect to the start_q view after deletion
         return redirect('start_q')
     except Exception as e:
-       pass
+        # Optionally, log the error or handle it as needed
+        pass
+def sinup(request):
+    if request.method== 'POST':
+        username=request.POST['signup-username']
+        password=request.POST['signup-password']
+        email=request.POST['signup-email']
+        saveuser=useraccount(username=username,password=password,email=email)
+        saveuser.save()
+        if saveuser:
+            
+          return redirect('login') 
+def user_login(request):
+    return render(request, 'login.html')
+def check_login(request):
     
+    if request.method== 'POST':
+        username=request.POST['login-username']
+        password=request.POST['login-password']
+        
+        user_account=useraccount.objects.filter(username=username) 
+        if user_account.exists():
+            global login1
+            login1=False
+            for user in user_account:
+                password_user=user.password
+                id=user.id
+                if password == password_user:
+                    
+                    login1=True
+                    request.session['userid']=id
+                    request.session['login1'] = True
+                    return redirect('start_q')
+                else:
+                    
+                    return redirect('login')
+        else:
+            
+            pass           
+def out(request):
+    user_id = request.session.get('userid', None)
+        
+        # Delete entries in the Answer model where iduser matches user_id
+    answer.objects.filter(iduser=user_id).delete()
+        
+    request.session.flush()
+   
+  
+   
+    return redirect('login')
+
+   
   
     

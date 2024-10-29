@@ -15,11 +15,21 @@ class User(models.Model):
         db_table = "User"
 class answer(models.Model):
     question=models.CharField(max_length=200)
-    i=models.CharField(max_length=30)
+    idq=models.CharField(max_length=30)
+    iduser=models.CharField(max_length=30)
     true_A=models.CharField(max_length=30)
     
     
     class Meta:
-        db_table = "answer"        
+        db_table = "answer"  
+class useraccount(models.Model):
+    username=models.CharField(max_length=30)
+    password=models.CharField(max_length=10)
+    email=models.EmailField(max_length=100 , default='')
+    
+    def __str__(self):
+        return self.username  
+    class Meta:
+        db_table="useraccount"            
         
     
