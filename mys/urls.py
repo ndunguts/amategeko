@@ -4,7 +4,7 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 
 urlpatterns = [
-    path('login/',views.user_login , name="login"),
+    path('',views.user_login , name="login"),
     
     path('insertE',views.insertexam, name="insertE"),
     path('start_q/',views.start_q, name='start_q'),

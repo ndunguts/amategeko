@@ -25,8 +25,8 @@ def end_exa(request):
 def insert(request):
     no=request.POST['no']
     quest=request.POST['quest']
-    A=request.POST['A']  
-    Save=User(question=quest, no=no, A=A)
+    answer=request.POST['A']  
+    Save=User(question=quest, no=no, A=answer)
     Save.save()
     return redirect('add')
 
@@ -75,7 +75,7 @@ def add_answer(request):
 def user_detail(request):
     if not request.session.get('login1', False):
             return redirect('login')
-    random_number = random.randint(1,2)
+    random_number = random.randrange(1, 50)
     
     user = get_object_or_404(User, no=random_number)  # Fetch the user by ID
 
