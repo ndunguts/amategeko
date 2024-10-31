@@ -3,27 +3,43 @@ from .models import User,answer,useraccount
 import random
 
 # Create your views here.
+def insertexam(request):
+    if not request.session.get('login1', False):
+            return redirect('login')
+    
+    return render(request, "insertE.html")
 def start_q(request):
-    return render(request, "start_q.html")
+     if not request.session.get('login1', False):
+            return redirect('login')
+     
+     return render(request, "start_q.html")
 def end_exa(request):
-    return render(request, "end.html")  
+    if not request.session.get('login1', False):
+            return redirect('login')
+    user_id=request.session.get('userid', None) 
+    amanota = answer.objects.filter(iduser=user_id, concluson="true").count()
+
+    return render(request, "end.html", {'amanota': amanota}) 
+ 
 
 def insert(request):
+    no=request.POST['no']
     quest=request.POST['quest']
     A=request.POST['A']  
-    Save=User(question=quest, A=A)
+    Save=User(question=quest, no=no, A=A)
     Save.save()
     return redirect('add')
 
 def show_quest(request):
+    
     list_question=User.objects.all()
     return render(request, "add.html",{'question':list_question})
 
     
 
 
-def add_tach(request, id):
-    number_question=User.objects.get(id=id)
+def add_tach(request, no):
+    number_question=User.objects.get(no=no)
     return render(request, "add_answer.html",{'id':number_question})
 
 
@@ -33,12 +49,12 @@ from .models import User
 
 def add_answer(request):
     if request.method == 'POST':
-        id = request.POST.get('id')  
+        no = request.POST.get('id')  
         option = request.POST.get('option')  
         answer = request.POST.get('answer')  
         try:
             
-            add_question = User.objects.get(id=id)
+            add_question = User.objects.get(no=no)
 
             
             if hasattr(add_question, option):  # Check if the field exists on the model
@@ -57,9 +73,11 @@ def add_answer(request):
 
     
 def user_detail(request):
-    random_number = random.randint(1, 2)
+    if not request.session.get('login1', False):
+            return redirect('login')
+    random_number = random.randint(1,2)
     
-    user = get_object_or_404(User, id=random_number)  # Fetch the user by ID
+    user = get_object_or_404(User, no=random_number)  # Fetch the user by ID
 
     # Create a dictionary to hold non-empty fields
     non_empty_fields = {}
@@ -72,20 +90,34 @@ def user_detail(request):
 
     return render(request, 'test.html', {'user': user, 'non_empty_fields': non_empty_fields,'random':user})
 def save_answer(request):
+    if not request.session.get('login1', False):
+            return redirect('login')
     user_id = request.session.get('userid', None)
     if answer.objects.filter(iduser=user_id).count() <= 18:
        question=request.POST['question']
-       idq=request.POST['idq']
+       noq=request.POST['no']
     
-       answe=request.POST['answer']
-       SaVe=answer(question=question,idq=idq,iduser=user_id, true_A=answe)
-       SaVe.save()
+       true_answer=request.POST['true_answer']
+       user_answer=request.POST['user_answer']
+       if user_answer == true_answer:
+          SaVe=answer(question=question,noq=noq,iduser=user_id, true_Answer=true_answer,user_Answer=user_answer,concluson="true")
+          SaVe.save()
+       else:
+           SaVe=answer(question=question,noq=noq,iduser=user_id, true_Answer=true_answer,user_Answer=user_answer,concluson="false")
+           SaVe.save()
+              
+          
        return redirect('list')
+      
        
     else:
         return redirect('end')
 def end_delete(request):  
+    if not request.session.get('login1', False):
+            return redirect('login')
+   
     try:
+       
         # Get user_id from session
         user_id = request.session.get('userid', None)
         
@@ -109,32 +141,32 @@ def sinup(request):
           return redirect('login') 
 def user_login(request):
     return render(request, 'login.html')
+from django.shortcuts import redirect
+
 def check_login(request):
-    
-    if request.method== 'POST':
-        username=request.POST['login-username']
-        password=request.POST['login-password']
-        
-        user_account=useraccount.objects.filter(username=username) 
-        if user_account.exists():
-            global login1
-            login1=False
+    if request.method == 'POST':
+        username = request.POST['login-username']
+        password = request.POST['login-password']
+
+        user_account = useraccount.objects.filter(username=username) 
+        if user_account.exists(): 
             for user in user_account:
-                password_user=user.password
-                id=user.id
-                if password == password_user:
-                    
-                    login1=True
-                    request.session['userid']=id
+                if password == user.password:
+                    # Set session variables
+                    request.session['userid'] = user.id
                     request.session['login1'] = True
                     return redirect('start_q')
-                else:
-                    
-                    return redirect('login')
+            else:
+                # Password is incorrect
+                return redirect('login')
         else:
-            
-            pass           
+            # User does not exist
+            return redirect('login')
+    return redirect('login')  # Redirect on GET requests
+
 def out(request):
+    if not request.session.get('login1', False):
+            return redirect('login')
     user_id = request.session.get('userid', None)
         
         # Delete entries in the Answer model where iduser matches user_id

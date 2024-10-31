@@ -11,23 +11,23 @@
     <div class="container">
         <div class="start-screen">
             <h1 class="heading">Qestion prem</h1>
-            <form action="/add2/" method="post">
+            <form action="/insert/" method="post">
                 {% csrf_token %}
             <div class="setting">
-                <label for="num-questions">icrease answer to D</label>
-                number of Question= <input type="text" value="{{ id.no }}" readonly name="id">
+                <label for="num-questions">number of questions</label>
+                nomber : <input type="text" name="no" >
                
                 
             </div>
             <div class="setting">
                 
-                option: <input type="text" name="option" >
+                question : <input type="text" name="quest" >
                
                 
             </div>
             <div class="setting">
                 
-                answer: <input type="text" name="answer" >
+                Answer A : <input type="text" name="A" >
                
                 
             </div>
@@ -35,7 +35,7 @@
             
             
 
-            <input type="submit" name="reg" class="btn start" value="+ADD Answer">
+            <input type="submit" name="reg" class="btn start" value="Save Question">
         </form>
         </div>
     </div>

@@ -4,20 +4,25 @@ from django.db import models
 
 class User(models.Model):
     question=models.CharField(max_length=200)
+    no=models.CharField(max_length=30)
+    E=models.CharField(max_length=30)
     A=models.CharField(max_length=30)
     B=models.CharField(max_length=30)
     C=models.CharField(max_length=30)
     D=models.CharField(max_length=30)
-    E=models.CharField(max_length=30)
-    F=models.CharField(max_length=30)
+    
+   
     
     class Meta:
         db_table = "User"
 class answer(models.Model):
     question=models.CharField(max_length=200)
-    idq=models.CharField(max_length=30)
+    noq=models.CharField(max_length=30)
     iduser=models.CharField(max_length=30)
-    true_A=models.CharField(max_length=30)
+    true_Answer=models.CharField(max_length=30)
+    user_Answer=models.CharField(max_length=30)
+    concluson=models.CharField(max_length=30)
+    
     
     
     class Meta:
@@ -30,6 +35,8 @@ class useraccount(models.Model):
     def __str__(self):
         return self.username  
     class Meta:
-        db_table="useraccount"            
+        db_table="useraccount"   
+        
+                 
         
     

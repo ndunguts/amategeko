@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Login & Signup Form {% endblock%}</title>
     <link rel="stylesheet" href="{% static 'styles2.css' %}">
+    <script>
+        // Prevent back navigation after page load
+        function preventBack() {
+            window.history.forward();
+        }
+
+        window.onload = preventBack;
+        window.onpageshow = function (event) {
+            if (event.persisted) {
+                preventBack();
+            }
+        };
+        window.onunload = function () { null }; // Prevents back action
+    </script>
 </head>
 <body>
     {% block content %}
