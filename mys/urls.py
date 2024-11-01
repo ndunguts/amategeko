@@ -18,7 +18,8 @@ urlpatterns = [
     path('end_delete/',views.end_delete ,name="end_delete"),
     path('sinup/',views.sinup,name='sinup'),
     path('check/',views.check_login, name="checklogin"),
-    path('out/',views.out, name="out")
+    path('out/',views.out, name="out"),
+    path('correct/',views.correct, name="correct")
     
 ]
 urlpatterns += staticfiles_urlpatterns()

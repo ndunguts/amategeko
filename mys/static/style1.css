@@ -24,6 +24,8 @@ body{
 
 
 }
+
+
 .heading{
     text-align: center;
     font-size: 40px;
@@ -79,6 +81,8 @@ select{
     justify-content: center;
     margin-bottom: 30px;
 }
+
+
 .timer .progress{
     position: relative;
     width: 100%;
@@ -95,7 +99,7 @@ select{
     height: 100%;
     border-radius: 30px;
     overflow: hidden;
-    background: linear-gradient(to right, #ea517c, #b478f1);
+    background: linear-gradient(to right, #ea517c, #e25353);
     transition: 1s linear;
 }
 .timer .progress .progress-text{
@@ -140,21 +144,13 @@ select{
     cursor:pointer;
     transition: 0.3s linear;
 }
-.answer .checkbox{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border:3px solid #3f4868;
-    justify-content: center;
-    transition: all 0.3s;
-}
+
 ul{
     list-style: none;
 
 }
-.start{
-    margin-top: 100px;
-}
+
+
 .head{
     margin-left: 50px;
 }

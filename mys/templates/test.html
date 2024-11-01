@@ -23,18 +23,25 @@
 </head>
 <body>
     
+   
+    
     <div class="container">
-        <div class="head"><a href="{% url 'out' %}"><button class="start">Logout</button></a></div>
+        <a href="{% url 'out' %}"><button class="star">logout</button></a>
+        
+
         <div class="start-screen hide">
+            
+    
             <!-- Start screen content can go here -->
         </div>
         <div class="quiz">
             <div class="timer">
+                
                 <div class="progress">
                     <div class="progress-bar"></div>
                     <span class="progress-text">50</span>
                 </div> 
-                <a href="{% url 'end_delete' %}"><button class="star">Reset</button></a>
+                
             </div>
             <div class="question-wrapper">
                 <form action="/test/" method="post">
@@ -60,8 +67,9 @@
                                                     <span class="text">
                                                         <input type="radio" name="user_answer" value="{{ value }}" id="user_answer_{{ forloop.counter }}">
                                                         <label for="user_answer_{{ forloop.counter }}">{{ field_name }}: {{ value }}</label>
+                                                        </button>
                                                     </span>
-                                                    <span class="checkbox">v</span>
+                                                    
                                                 </div>
                                             </div>
                                         {% endif %}

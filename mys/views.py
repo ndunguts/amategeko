@@ -16,12 +16,16 @@ def start_q(request):
 def end_exa(request):
     if not request.session.get('login1', False):
             return redirect('login')
-    user_id=request.session.get('userid', None) 
-    amanota = answer.objects.filter(iduser=user_id, concluson="true").count()
+    user_id = request.session.get('userid', None)    
+    number_questin = answer.objects.filter(iduser=user_id).count()
+    if number_questin == 19:
+          amanota = answer.objects.filter(iduser=user_id, concluson="true").count()
 
-    return render(request, "end.html", {'amanota': amanota}) 
+          return render(request, "end.html", {'amanota': amanota}) 
+    else:
+          
  
-
+        return redirect('list')
 def insert(request):
     no=request.POST['no']
     quest=request.POST['quest']
@@ -140,7 +144,10 @@ def sinup(request):
             
           return redirect('login') 
 def user_login(request):
-    return render(request, 'login.html')
+    if not request.session.get('login1', False):
+            
+            return render(request, 'login.html')
+    return redirect('start_q')
 from django.shortcuts import redirect
 
 def check_login(request):
@@ -178,6 +185,20 @@ def out(request):
    
     return redirect('login')
 
-   
+def correct(request):
+    if not request.session.get('login1', False):
+            return redirect('login')
+    user_id = request.session.get('userid', None)    
+    number_question = answer.objects.filter(iduser=user_id).count()
+    if number_question== 19:
+            
+        amanota = answer.objects.filter(iduser=user_id, concluson="true").count()
+        correct=answer.objects.filter(iduser=user_id)
+        
+    
+    
+        return render(request, 'correct.html',{'correct':correct,'amanota':amanota})
+
+    return redirect('list')
   
     

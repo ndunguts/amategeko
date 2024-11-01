@@ -1,3 +1,6 @@
+
+
+
 body {
     margin: 0;
     padding: 0;
@@ -64,9 +67,16 @@ body {
     transform: rotateY(0deg);
 }
 .form-login h2{
+<<<<<<< HEAD
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
 
+=======
+    
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    
+>>>>>>> 617eac5 (settings)
 }
 
 .form-signup {
@@ -75,8 +85,12 @@ body {
 .form-signup h2{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
+<<<<<<< HEAD
 
 
+=======
+  
+>>>>>>> 617eac5 (settings)
 }
 
 h2 {

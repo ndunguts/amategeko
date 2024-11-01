@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let radios = document.querySelectorAll('input[name="user_answer"]');
         let isChecked = Array.from(radios).some(radio => radio.checked);
         const errorMessage = document.getElementById('error-message'); // Ensure you have an element for error messages
-    
+
         if (!isChecked) {
             errorMessage.textContent = 'Please select an answer before proceeding.';
             errorMessage.style.color = 'red'; // Optional: Style the error message
@@ -42,10 +42,9 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             errorMessage.textContent = ''; // Clear error message if validated
         }
-    
+
         return true;
     }
-    
 
     // Add an event listener to the "Next" button
     showAnswerButton.addEventListener('click', (event) => {
@@ -73,4 +72,15 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('currentResult', currentResult);
         updateProgressDisplay();
     });
+
+    // Add functionality to reset on logout
+    const logoutButton = document.getElementById('logoutButton');
+    if (logoutButton) {
+        logoutButton.addEventListener('click', () => {
+            // Clear currentResult from localStorage on logout
+            localStorage.removeItem('currentResult');
+            currentResult = 1;
+            updateProgressDisplay();
+        });
+    }
 });

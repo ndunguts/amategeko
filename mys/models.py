@@ -4,12 +4,12 @@ from django.db import models
 
 class User(models.Model):
     question=models.CharField(max_length=200)
-    no=models.CharField(max_length=30)
-    E=models.CharField(max_length=30)
-    A=models.CharField(max_length=30)
-    B=models.CharField(max_length=30)
-    C=models.CharField(max_length=30)
-    D=models.CharField(max_length=30)
+    no=models.CharField(max_length=150)
+    E=models.CharField(max_length=150)
+    A=models.CharField(max_length=150)
+    B=models.CharField(max_length=150)
+    C=models.CharField(max_length=150)
+    D=models.CharField(max_length=150)
     
    
     
@@ -17,20 +17,22 @@ class User(models.Model):
         db_table = "User"
 class answer(models.Model):
     question=models.CharField(max_length=200)
-    noq=models.CharField(max_length=30)
-    iduser=models.CharField(max_length=30)
-    true_Answer=models.CharField(max_length=30)
-    user_Answer=models.CharField(max_length=30)
-    concluson=models.CharField(max_length=30)
+    noq=models.CharField(max_length=150)
+    iduser=models.CharField(max_length=150)
+    true_Answer=models.CharField(max_length=150)
+    user_Answer=models.CharField(max_length=150)
+    concluson=models.CharField(max_length=150)
+    def __str__(self):
+        return self.noq  
     
     
     
     class Meta:
         db_table = "answer"  
 class useraccount(models.Model):
-    username=models.CharField(max_length=30)
-    password=models.CharField(max_length=10)
-    email=models.EmailField(max_length=100 , default='')
+    username=models.CharField(max_length=150)
+    password=models.CharField(max_length=150)
+    email=models.EmailField(max_length=150 , default='')
     
     def __str__(self):
         return self.username  
