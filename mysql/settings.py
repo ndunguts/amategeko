@@ -29,6 +29,8 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
     '68c7-2a02-4780-28-fcc9-00-1.ngrok-free.app',
+    'gitego.xyz',
+    'www.gitego.xyz',
 ]
 
 CSRF_TRUSTED_ORIGINS = [
