@@ -79,7 +79,11 @@ def add_answer(request):
 def user_detail(request):
     if not request.session.get('login1', False):
             return redirect('login')
+<<<<<<< HEAD
     random_number = random.randrange(1, 50)
+=======
+    random_number = random.randrange(1,2)
+>>>>>>> a48565c (settings)
     
     user = get_object_or_404(User, no=random_number)  # Fetch the user by ID
 

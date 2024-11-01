@@ -25,8 +25,11 @@ SECRET_KEY = 'django-insecure-bf97u__y8b_374-g7+xki3z&2u3@dzq+z7%er3-xx2utyv!*e(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ 'www.gitego.xyz', 'gitego.xyz' ]  # Add your IP or domain here
-
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
+    '68c7-2a02-4780-28-fcc9-00-1.ngrok-free.app',
+]
 
 CSRF_TRUSTED_ORIGINS = [
     'https://68c7-2a02-4780-28-fcc9-00-1.ngrok-free.app',
