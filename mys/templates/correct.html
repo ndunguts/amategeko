@@ -1,29 +1,64 @@
-
-{% load static  %}
+{% load static %}
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="{% static 'style1.css' %}">
-    
+    <link rel="stylesheet" href="{% static 'style3.css' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script>
+        // Prevent back navigation after page load
+        function preventBack() {
+            window.history.forward();
+        }
+
+        window.onload = preventBack;
+        window.onpageshow = function (event) {
+            if (event.persisted) {
+                preventBack();
+            }
+        };
+        window.onunload = function () { null }; // Prevents back action
+    </script>
 </head>
 <body>
-    <div class="container">
-        <div class="start-screen">
-            <h1 class="heading">PROVISIONAL</h1>
-            <div class="setting">
-                <label for="num-questions">Correction of Driving Test-Provisional</label>
-                resuilt <span  class="current">{{amanota}}</span><span class="total">/20</span>
-                <table border="3">
-                    <tr>
+    <header class="header"  >
+        <a href="{% url 'end_delete' %}" class="logo">Gitego.</a>
+        <div id="menu-icon"><i class='bx bx-menu' ></i></div>
+
+        <nav class="navbar">
+            <a href="{% url 'end_delete' %}" class="active">Start_again</a>
+            <a href="#false">ibyapfuye</a>
+            <a href="#true">ibiribyo gusa</a>
+            <a href="#contact">Support</a>
+            
+            <a href="{% url 'out'  %}">Logout</a>
+
+            <span class="active-nav"></span>
+            
+        </nav>
+
+    </header>
+    
+    <section class="about" id="about">
+        <h2 class="heading">amanota atagwa na<span>Gitego Program</span></h2>
+        <div class="about-img">
+            <img src="../static/image/igitabo1.png" alt="">
+            <span class="circle-spin"></span>
+        </div>
+        <div class="about-content">
+            <h3>amanota ugize mukiza cya mategeko y'umuhanda {{amanota}}/20</h3>
+            <table >
+                <tr>
                         
-                        <th>question</th>
-                        <th>True_Answer</th>
-                        <th>Your_Answer</th>
-                    </tr>
-                    {% for corr in correct %}
+                    <th>question</th>
+                    <th>True_Answer</th>
+                    <th>Your_Answer</th>
+                </tr>
+                {% for corr in correct %}
                     <tr>
                         
                         <td>{{corr.question}}</td>
@@ -32,14 +67,105 @@
                         <td>{{corr.concluson}}</td>
                     </tr>
                     {% endfor %}    
-                    
-                </table>
+
+            </table>
+               
+        </div>
+    </section>
+     <section class="true" id="true">
+        <h2 class="heading">amanota atagwa na<span>Gitego Program</span></h2>
+        <div class="about-img">
+            <img src="../static/image/igitabo1.png" alt="">
+            <span class="circle-spin"></span>
+        </div>
+        <div class="about-content">
+            <h3>ibyo wakoze gusa ni  {{amanota}}</h3>
+            <table>
+                <tr>
+                        
+                    <th>question</th>
+                    <th>True_Answer</th>
+                    <th>Your_Answer</th>
+                </tr>
+                {% for True in answer_true %}
+                    <tr>
+                        
+                        <td>{{True.question}}</td>
+                        <td>{{True.true_Answer}}</td>
+                        <td>{{True.user_Answer}}</td>
+                        <td>{{True.concluson}}</td>
+                    </tr>
+                    {% endfor %}    
+
+            </table>
+               
+        </div>
+    </section>
+    <section class="false" id="false">
+        <h2 class="heading">amanota atagwa na <span>Gitego Program</span></h2>
+        <div class="about-img">
+            <img src="../static/image/igitabo1.png" alt="">
+            <span class="circle-spin"></span>
+        </div>
+        <div class="about-content">
+            <h3>ibyo wishe gusa ni {{answer_false_number}}</h3>
+            {% if answer_false_number == 0 %}
+               <h1>Ntacyo wishe wowe uzi ubwege uzimuka </h1>
+            {% else %} 
+              <table border="3">
+                <tr>
+                        
+                    <th>question</th>
+                    <th>True_Answer</th>
+                    <th>Your_Answer</th>
+                </tr>
+                {% for False in answer_false %}
+                    <tr>
+                        
+                        <td>{{False.question}}</td>
+                        <td>{{False.true_Answer}}</td>
+                        <td>{{False.user_Answer}}</td>
+                        <td>{{False.concluson}}</td>
+                    </tr>
+                    {% endfor %}    
+
+            </table>
+            {% endif %}
+               
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="heading">Support <span> Send_Message </span></h2>
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="email" placeholder="Your Email" required>
+                    <span class="focus"></span>
+                </div>
                 
-                <a href="{% url 'end_delete' %}" ><button class="btn start_q">Start again</button></a>
             </div>
            
+            <div class="textarea-field">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <span class="focus"></span>
+            </div>
+            <div class="btn-box btns">
+                <button type="submit" class="btn">submit</button>
+            </div>
+        </form>
+    </section>
+    
+
+    
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by gitego | All rights Reserved</p>
         </div>
-    </div>
-    <script src="scr.js"></script>
+        <div class="footer-iconTop">
+            <a href="#"><i class='bx bxs-hand-up'></i></a>
+        </div>
+    </footer>
+    <script src="{% static 'js/index.js' %}"></script>
+
 </body>
 </html>

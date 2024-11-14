@@ -7,23 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="{% static 'style1.css' %}">
-    <script>
-        // Prevent back navigation after page load
-        function preventBack() {
-            window.history.forward();
-        }
-
-        window.onload = preventBack;
-        window.onpageshow = function (event) {
-            if (event.persisted) {
-                preventBack();
-            }
-        };
-        window.onunload = function () { null }; // Prevents back action
-    </script>
+    <link rel="stylesheet" href="{% static 'style3.css' %}">
+    
 </head>
 <body>
     <div class="container">
+        <header class="header"  >
+            <a href="#" class="logo">Gitego.</a>   
+        </header>
         <div class="start-screen">
             <h1 class="heading">PROVISIONAL</h1>
             <div class="setting">
@@ -37,6 +28,6 @@
            
         </div>
     </div>
-    <script src="scr.js"></script>
+    <script src="{% static 'js/index.js' %}"></script>
 </body>
 </html>

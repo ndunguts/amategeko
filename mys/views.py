@@ -3,6 +3,8 @@ from .models import User,answer,useraccount
 import random
 
 # Create your views here.
+def pageall(request):
+    return render(request, 'index.html')
 def insertexam(request):
     if not request.session.get('login1', False):
             return redirect('login')
@@ -79,7 +81,7 @@ def add_answer(request):
 def user_detail(request):
     if not request.session.get('login1', False):
             return redirect('login')
-    random_number = random.randrange(1, 2)
+    random_number = random.randrange(1, 50)
     
     user = get_object_or_404(User, no=random_number)  # Fetch the user by ID
 
@@ -173,7 +175,7 @@ def check_login(request):
 
 def out(request):
     if not request.session.get('login1', False):
-            return redirect('login')
+            return redirect('fistpage')
     user_id = request.session.get('userid', None)
         
         # Delete entries in the Answer model where iduser matches user_id
@@ -183,7 +185,7 @@ def out(request):
    
   
    
-    return redirect('login')
+    return redirect('fistpage')
 
 def correct(request):
     if not request.session.get('login1', False):
@@ -193,11 +195,14 @@ def correct(request):
     if number_question== 19:
             
         amanota = answer.objects.filter(iduser=user_id, concluson="true").count()
+        answer_false_number=answer.objects.filter(iduser=user_id,concluson="false").count()
+        answer_false=answer.objects.filter(iduser=user_id,concluson="false")
+        answer_true=answer.objects.filter(iduser=user_id, concluson="true")
         correct=answer.objects.filter(iduser=user_id)
         
     
     
-        return render(request, 'correct.html',{'correct':correct,'amanota':amanota})
+        return render(request, 'correct.html',{'correct':correct,'amanota':amanota,'answer_false_number':answer_false_number,'answer_false':answer_false,'answer_true':answer_true})
 
     return redirect('list')
   

@@ -1,0 +1,45 @@
+
+{% load static  %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style1.css' %}">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="start-screen">
+            <h1 class="heading">PROVISIONAL</h1>
+            <div class="setting">
+                <label for="num-questions">Correction of Driving Test-Provisional</label>
+                resuilt <span  class="current">{{amanota}}</span><span class="total">/20</span>
+                <table border="3">
+                    <tr>
+                        
+                        <th>question</th>
+                        <th>True_Answer</th>
+                        <th>Your_Answer</th>
+                    </tr>
+                    {% for corr in correct %}
+                    <tr>
+                        
+                        <td>{{corr.question}}</td>
+                        <td>{{corr.true_Answer}}</td>
+                        <td>{{corr.user_Answer}}</td>
+                        <td>{{corr.concluson}}</td>
+                    </tr>
+                    {% endfor %}    
+                    
+                </table>
+                
+                <a href="{% url 'end_delete' %}" ><button class="btn start_q">Start again</button></a>
+            </div>
+           
+        </div>
+    </div>
+    <script src="scr.js"></script>
+</body>
+</html>

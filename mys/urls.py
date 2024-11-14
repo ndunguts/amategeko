@@ -4,7 +4,7 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 
 urlpatterns = [
-    path('',views.user_login , name="login"),
+    path('login/',views.user_login , name="login"),
     
     path('insertE',views.insertexam, name="insertE"),
     path('start_q/',views.start_q, name='start_q'),
@@ -19,7 +19,8 @@ urlpatterns = [
     path('sinup/',views.sinup,name='sinup'),
     path('check/',views.check_login, name="checklogin"),
     path('out/',views.out, name="out"),
-    path('correct/',views.correct, name="correct")
+    path('correct/',views.correct, name="correct"),
+    path('fistpage',views.pageall,name="fistpage"),
     
 ]
 urlpatterns += staticfiles_urlpatterns()

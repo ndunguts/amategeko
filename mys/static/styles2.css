@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 
 body {
@@ -8,7 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #000000cd;
+    background: #081b29;
     overflow: hidden;
     
 }
@@ -66,32 +66,11 @@ body {
 .form-login {
     transform: rotateY(0deg);
 }
-.form-login h2{
-<<<<<<< HEAD
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-
-=======
-    
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    
->>>>>>> 617eac5 (settings)
-}
 
 .form-signup {
     transform: rotateY(180deg);
 }
-.form-signup h2{
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-<<<<<<< HEAD
 
-
-=======
-  
->>>>>>> 617eac5 (settings)
-}
 
 h2 {
     margin: 0 0 20px;

