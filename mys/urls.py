@@ -21,6 +21,8 @@ urlpatterns = [
     path('out/',views.out, name="out"),
     path('correct/',views.correct, name="correct"),
     path('',views.pageall,name="fistpage"),
+    path('sendemail',views.send_email_to_customer, name="sendemail"),
+    path('sendemailbest',views.send_email_to_customer_best, name="sendemailbest"),
     
 ]
 urlpatterns += staticfiles_urlpatterns()
