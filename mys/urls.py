@@ -20,7 +20,7 @@ urlpatterns = [
     path('check/',views.check_login, name="checklogin"),
     path('out/',views.out, name="out"),
     path('correct/',views.correct, name="correct"),
-    path('fistpage',views.pageall,name="fistpage"),
+    path('',views.pageall,name="fistpage"),
     
 ]
 urlpatterns += staticfiles_urlpatterns()
