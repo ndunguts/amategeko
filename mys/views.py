@@ -1,6 +1,7 @@
 from django.shortcuts import render,redirect,get_object_or_404
 from .models import User,answer,useraccount
 import random
+from django.core.mail import send_mail
 
 # Create your views here.
 def pageall(request):
@@ -81,7 +82,7 @@ def add_answer(request):
 def user_detail(request):
     if not request.session.get('login1', False):
             return redirect('login')
-    random_number = random.randrange(1, 2)
+    random_number = random.randrange(1, 50)
     
     user = get_object_or_404(User, no=random_number)  # Fetch the user by ID
 
@@ -206,4 +207,43 @@ def correct(request):
 
     return redirect('list')
   
+def send_email_to_customer(request):
+    if request.method == 'POST':
+        to_email = 'ndungutsejean5@gmail.com'   # Fetch email from form data
+        subject = 'support'
+        message = request.POST.get('message')
+        
+        from_email = request.POST.get('email')  # Replace with DEFAULT_FROM_EMAIL or define explicitly
+        messa1= message   + ' by ' + from_email
+        recipient_list = [to_email]
+        
+        try:
+            send_mail(subject, messa1, from_email, recipient_list)
+            return redirect('fistpage')
+        except Exception as e:
+            return HttpResponse(f'An error occurred: {e}')
+    else:
+        return render(request, 'send_email_form.html')  # A form to get the customer's email
+    
+    
+    
+def send_email_to_customer_best(request):
+    if request.method == 'POST':
+        to_email = 'ndungutsejean5@gmail.com'   # Fetch email from form data
+        subject = 'support'
+        message = request.POST.get('message')
+        
+        from_email = request.POST.get('email')  # Replace with DEFAULT_FROM_EMAIL or define explicitly
+        messa1= message   + ' by ' + from_email
+        recipient_list = [to_email]
+        
+        try:
+            send_mail(subject, messa1, from_email, recipient_list)
+            return redirect('correct')
+        except Exception as e:
+            return HttpResponse(f'An error occurred: {e}')
+    else:
+        return render(request, 'send_email_form.html')  # A form to get the customer's email
+    
+    
     

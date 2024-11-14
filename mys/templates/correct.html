@@ -136,17 +136,18 @@
     </section>
     <section class="contact" id="contact">
         <h2 class="heading">Support <span> Send_Message </span></h2>
-        <form action="#">
+        <form action="{% url 'sendemailbest' %}" method="post">
+            {% csrf_token %}
             <div class="input-box">
                 <div class="input-field">
-                    <input type="email" placeholder="Your Email" required>
+                    <input type="email" placeholder="Your Email" name="email" required>
                     <span class="focus"></span>
                 </div>
                 
             </div>
            
             <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
                 <span class="focus"></span>
             </div>
             <div class="btn-box btns">
