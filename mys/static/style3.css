@@ -577,11 +577,16 @@ section{
     85% {
         background-position: 0 0;
     }
+}    
+table {
+    border: 3px solid yellowgreen;
+    border-collapse: collapse; /* Ensures borders don't double up */
 }
-.about table {
+table th{
     border: 3px solid yellowgreen;
 }
-.about table tr{
-    border: 3px solid yellowgreen;
 
+
+table td {
+    border: 3px solid yellowgreen;
 }
